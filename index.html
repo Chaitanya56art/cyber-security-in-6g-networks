@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6G Network Security</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>6G Network Security</h1>
+        <div class="form-group">
+            <label for="data-to-encrypt">Enter the data to be encrypted:</label>
+            <input type="text" id="data-to-encrypt" class="input-field">
+            <button class="btn" onclick="encryptData()">Encrypt Data</button>
+            <p id="encrypted-data"></p>
+        </div>
+
+        <div class="form-group">
+            <label for="edge-data">Enter data for edge processing:</label>
+            <input type="text" id="edge-data" class="input-field">
+            <button class="btn" onclick="validateEdgeData()">Validate Edge Data</button>
+            <p id="edge-validation"></p>
+        </div>
+
+        <div class="form-group">
+            <label for="role">Enter your role (admin/user/guest):</label>
+            <input type="text" id="role" class="input-field">
+        </div>
+
+        <div class="form-group">
+            <label for="network-slice">Enter the network slice (low_latency/high_throughput/massive_IoT):</label>
+            <input type="text" id="network-slice" class="input-field">
+            <button class="btn" onclick="checkAccess()">Check Access</button>
+            <p id="access-status"></p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
